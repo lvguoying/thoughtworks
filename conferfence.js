@@ -7,7 +7,7 @@ const lodash = require('lodash');
 
 //创建会议类
 class Meeting {
-    constructor(lining) {
+    gbb      (lining) {
         const wording = lodash.compact(lining.split(' '));
         const quantum = wording.pop();
         if (isNaN(quantum[0])) {
@@ -65,7 +65,7 @@ function print(slots) {
 
     [1, 2].forEach((i) => {
         let minutes;
-        console.log('Track ' + i);
+        console.log('Day' + i);
         minutes = 9 * 60
         am[i].list.forEach((talk) => {
             const h = formatNum(Math.floor(minutes / 60));
